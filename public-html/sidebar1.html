@@ -1,0 +1,99 @@
+<aside id="sidebar">
+    <h1 id="sidebar-title"><a href="{{ site.url }}">Openshift on Z FaQ</a></h1>
+	<div id="sidebar-logo">
+	<img src="{{ site.url }}/assets/img/OpenShift-Logo.png" width="100" height="100" alt="Openshift">
+	</div>
+    <div id="collection-list">
+       <div class="overview-link">
+			<a href="{{ site.url }}" class="{% if page.url == '/' > %} active-link {% endif %}">Overview</a>
+        </div>
+        {% assign collections = site.collections | sort: 'sequence' %}
+        {% for collection in collections %}
+
+        {% assign name = collection.label %}
+        {% if name == 'posts' %}{% continue %}{% endif %}
+
+
+
+        {% if name == 'faq' %}
+		
+		
+
+        <section>
+            <div class="section-title">
+                {% if collection.icon %}
+                <img src="{{ site.url }}{{ collection.icon }}" alt="Collection icon">
+                {% endif %}
+                {% assign words = name | split: '-' %}
+                {% capture titlecase %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% endcapture %}
+                <h3>{{ titlecase }}</h3>
+            </div>
+
+            {% assign groups = site[name] | group_by: 'type' | sort: 'name' %}
+        
+			{% for group in groups %}
+				
+            <div class="org-group">
+				<h3 class="org-accordion">{{ group.name | split: '-' | last  }} </h3>
+				<div class="org-subpanel">
+                <ul>
+                    {% for item in group.items %}
+                    <li><a href="{{ site.url }}{{ item.url }}" class="{% if page.url == item.url %} active-link {% endif %}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+				</div>
+            </div>
+
+
+
+            {% endfor %}
+			
+			
+		<script>
+		/* this script collapses and expands the accordion of items in each type */
+		var acc = document.getElementsByClassName("org-accordion");
+		var i;
+
+			for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+			/* Toggle between adding and removing the "active" class,
+			to highlight the button that controls the panel */
+			this.classList.toggle("active");
+
+			/* Toggle between hiding and showing the active panel */
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+			panel.style.display = "none";
+			} else {
+			panel.style.display = "block";
+			}
+		});
+		}
+		</script>
+ 
+        </section>
+
+        {% else %}
+
+        <section>
+            <div class="section-title">
+                {% if collection.icon %}
+                <img src="{{ site.url }}{{ collection.icon }}" alt="Collection icon">
+                {% endif %}
+                {% assign words = name | split: '-' | sort: 'name' %}
+                {% capture titlecase %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% endcapture %}
+                <h3>{{ titlecase }}</h3>
+            </div>
+
+            <ul>
+                {% for item in site[name] %}
+                <li><a href="{{ site.url }}{{ item.url }}" class="{% if page.url == item.url %} active-link {% endif %}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+
+        </section>
+
+        {% endif %}
+        {% endfor %}
+    </div>
+</aside>
