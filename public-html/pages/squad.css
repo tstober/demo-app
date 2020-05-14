@@ -1,0 +1,140 @@
+.squad-title h1 {
+    margin-bottom: 0;
+}
+
+.squad-title h2 {
+    margin-top: 10px;
+}
+
+.squad-member {
+    margin: 20px;
+    max-height: 200px;
+    display: inline-block;
+    max-width: 117px;
+    vertical-align: top;
+}
+
+.with-components {
+    max-height: none;
+    width: 150px;
+    max-width: none;
+    vertical-align: top;
+}
+
+.with-areas {
+    max-height: none;
+    width: 300px;
+    max-width: none;
+    vertical-align: top;
+}
+
+.squad-member img {
+    max-height: 115px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px lightgray;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.squad-member figcaption {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.squad-member li {
+    margin: 0 5px;
+    padding: 0;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.squad-member ul {
+     position: relative;
+     left: -7px;
+}
+
+.squad-member p {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    max-height: 3px;
+}
+
+.leader li {
+    margin: 0 5px;
+    padding: 0;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.leader p {
+    font-size: 13px;
+    font-weight: normals;    
+    text-align: left;
+    max-height: 3px;
+}
+.issue-holder {
+    border: solid 1px lightgray;
+}
+
+.issue-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px lightblue;
+    margin: 20px 20px 20px;
+}
+
+.issue-header > * {
+    margin-top: 0 !important;
+}
+
+#issue-count > * {
+    margin-top: 0 !important;
+}
+
+#issue-count span {
+    margin-right: 5px;
+}
+
+.see-more {
+    margin-left: 20px;
+}
+
+.important-squad-links {
+    border: solid 1px lightgray;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.important-squad-links h3 {
+    border-bottom: solid 1px lightblue;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.list-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.list-holder a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.list-holder a:hover {
+    text-decoration: underline;
+    background: rgba(200, 200, 200, 0.5);
+    cursor: pointer;
+}
+
+.list-holder a:visited {
+    color: #0000EE;
+}

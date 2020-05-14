@@ -1,0 +1,175 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+figcaption {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.flex-container {
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-left: 10px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    color: #888888;
+}
+
+.content {
+    min-width: 550px;
+    max-width: 850px;
+}
+
+.content > * {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.content > h2 {
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+.post-content > h2 {
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+.post-content > :first-child {
+    margin-top: 20px;
+}
+
+.content h3 {
+    margin-top: 40px;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+blockquote {
+    border-left: solid 2px cadetblue;
+}
+
+blockquote {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e1ebf7;
+}
+
+td {
+    padding: 10px;
+}
+
+.table-holder {
+    width: 100%;
+}
+
+
+.flex-box {
+    display: flex;
+}
+
+.card {
+    width: 375px;
+    border: solid 1px lightgray;
+    min-height: 200px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.card h4 {
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.card ul {
+    text-align: left;
+}
+
+.card img {
+    max-width: 50px;
+}
+
+.card-holder {
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.title {
+    border-bottom: solid 1px lightgray;
+}
+
+#search-wrapper {
+    padding: 20px;
+    padding-left: 0;
+    margin-top: 30px;
+}
+
+.search-meta a h3 {
+    margin-bottom: 0;
+}
+
+#search-results {
+    list-style: none;
+    padding-left: 10px;
+}
+
+#search-results li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-meta a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.search-meta a:hover {
+    text-decoration: underline;
+}
+
+.search-meta a:visited {
+    color: #0000EE;
+}
+
+.search-meta p {
+    margin-top: 0;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
+#search-box {
+    height: 30px;
+    margin-left: 10px;
+}
+
+#search-form label {
+    font-size: 1.5em;
+}
+
+#search-submit {
+    height: 28px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.subtitle {
+    margin-top: 30px;
+}

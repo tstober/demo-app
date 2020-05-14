@@ -1,0 +1,36 @@
+.question-title h1 {
+    margin-bottom: 0;
+}
+
+.question-title h2 {
+    margin-top: 10px;
+}
+
+.question-chart {
+    border: solid 1px lightgray;
+    padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+   margin-bottom: 20px;
+    margin-top: 50px;
+	background-color: #eee;
+}
+
+.question-important-links {
+    border: solid 1px lightgray;
+    margin-bottom: 20px;
+    margin-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+
+	
+	background-color: #eee;
+}
+
+.question-important-links h2 {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+

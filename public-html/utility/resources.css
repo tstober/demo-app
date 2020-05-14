@@ -1,0 +1,24 @@
+.box-logo{
+  height: 1em;
+  vertical-align: middle;
+}
+.slack-logo{
+  height: 1em;
+  vertical-align: middle;
+}
+.logo {
+  height: 2em;
+  vertical-align: middle;
+}
+.right-most-card {
+	margin-left: 10px;
+  margin-right: 60px;
+}
+
+.no-list{
+  list-style-type: none;
+}
+
+.disc-list{
+  list-style-type: disc;
+}
